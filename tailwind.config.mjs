@@ -12,6 +12,7 @@ export default {
         amarillo: "#DD9C2B",
         amarillo2: "#F6C11B",
         gris: "#6C6C6C",
+        gris2: "#EBEBEB",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
