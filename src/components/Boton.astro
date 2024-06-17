@@ -1,0 +1,20 @@
+<button class="flex flex-col gap-1.5 items-end ml-auto lg:hidden">
+  <span class="w-6 h-0.5 bg-white"></span>
+  <span class="w-8 h-0.5 bg-white"></span>
+  <span class="w-6 h-0.5 bg-white"></span>
+</button>
+<script>
+  const button = document.querySelector("button");
+  const nav = document.querySelector("nav");
+
+  if (button !== null && nav !== null) {
+    button.addEventListener("click", () => {
+      if (nav.classList.contains("hidden")) {
+        nav.classList.replace("hidden", "flex");
+      } else {
+        nav.classList.replace("flex", "hidden");
+      }
+      button.classList.toggle("animate-menu");
+    });
+  }
+</script>

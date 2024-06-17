@@ -1,0 +1,17 @@
+---
+interface Props {
+  titulo: string;
+  elementos: string[];
+}
+
+const { titulo, elementos } = Astro.props;
+---
+
+<details class="flex">
+  <summary class="flex text-white text-center justify-center list-none"
+    >{titulo}</summary
+  >
+  <ul class="bg-turquesa w-full text-white lg:absolute">
+    {elementos.map((elemento) => <li>{elemento}</li>)}
+  </ul>
+</details>

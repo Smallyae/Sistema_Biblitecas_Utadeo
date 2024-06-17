@@ -1,1 +1,27 @@
-<header>Header</header>
+---
+import Details from "../components/Details.astro";
+import Boton from "../components/Boton.astro";
+---
+
+<header
+  class="flex h-20 fixed w-full p-2.5 items-center bg-azul md:px-5 lg:h-90 lg:gap-30"
+>
+  <a class="lg:border-r pr-2.5" href="/">
+    <img src="/icon/Utadeo.svg" alt="Logo de la universidad" />
+  </a>
+  <nav
+    class="absolute top-20 left-0 hidden flex-col bg-azul w-full gap-30 py-30 lg:flex lg:flex-row lg:relative lg:top-0 lg:py-0"
+  >
+    <Details titulo="Sistema de Biblioteca" elementos={["1", "2", "3"]} />
+    <Details titulo="Servicios" elementos={["1", "2", "3"]} />
+    <Details titulo="Docencia e investigación" elementos={["1", "2", "3"]} />
+    <Details
+      titulo="Proyección social y extensión"
+      elementos={["1", "2", "3"]}
+    />
+    <Details titulo="Cultura" elementos={["1", "2", "3"]} />
+    <Details titulo="Editorial  " elementos={["1", "2", "3"]} />
+    <Details titulo="Contacto" elementos={["1", "2", "3"]} />
+  </nav>
+  <Boton />
+</header>
